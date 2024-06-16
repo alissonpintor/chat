@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1076377699753",
+    "project_id": "chat-13006",
+    "storage_bucket": "chat-13006.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076377699753:android:4be6a785224c0161cbf0b8",
+        "android_client_info": {
+          "package_name": "br.com.alisson.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoxgaxNcr-wDMe_1GYwsTNco5FIQJx9Ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
