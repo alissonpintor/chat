@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 //https://stackoverflow.com/questions/70919127/your-project-requires-a-newer-version-of-the-kotlin-gradle-plugin-android-stud
 //https://stackoverflow.com/questions/52060516/flutter-how-to-change-android-minsdkversion-in-flutter-project
+//https://stackoverflow.com/questions/57032406/flutter-desktop-embedding-how-to-build-exe-file
 
 void main() {
   runApp(const MyApp());
