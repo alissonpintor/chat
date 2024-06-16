@@ -7,7 +7,7 @@ import 'package:chat/core/services/auth/auth_service.dart';
 
 class AuthMockService implements AuthService {
   static const _defaultUser = ChatUser(
-    id: '123',
+    id: '1',
     name: 'João',
     email: 'joao@email.com',
     imageUrl: 'assets/images/avatar.png',
@@ -51,8 +51,6 @@ class AuthMockService implements AuthService {
       email: email,
       imageUrl: image?.path ?? 'assets/images/avatar.png',
     );
-
-    print(newUser.email);
 
     _users.putIfAbsent(email, () => newUser);
     _updateUser(newUser);

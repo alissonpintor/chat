@@ -20,7 +20,7 @@ class Messages extends StatelessWidget {
           );
         } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
           return Center(
-            child: Text('Sem dados. Vamos conversar?'),
+            child: Text('Sem mensagens. Vamos conversar?'),
           );
         } else {
           final msgs = snapshot.data!;
@@ -29,10 +29,12 @@ class Messages extends StatelessWidget {
             reverse: true,
             itemCount: msgs.length,
             itemBuilder: (context, index) {
+              print(
+                  'Usuario ${currentUser?.name} / ${currentUser?.id} / ${msgs[index].id}');
               return MessageBubble(
                 key: ValueKey(msgs[index].id),
                 message: msgs[index],
-                belongsToCurrentUser: currentUser?.id == msgs[index].id,
+                belongsToCurrentUser: currentUser?.id == msgs[index].userId,
               );
             },
           );
